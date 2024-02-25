@@ -6,6 +6,9 @@
     "build": "vite build  --emptyOutDir",
     "preview": "vite preview"
   },
+  "dependencies": {
+    
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "eslint": "^8.6.0",
