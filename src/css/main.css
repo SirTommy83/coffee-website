@@ -2,6 +2,7 @@
 @import "base.css";
 @import "components/hero.css";
 @import "layout/footer.css";
+@import "layout/navi.css";
 @import "layout/header.css";
 @import "pages/home.css";
 @import "pages/the-cafe.css";
