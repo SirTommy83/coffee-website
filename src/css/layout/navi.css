@@ -1,52 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+}
+
 .main-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0.5rem 5rem;
-    z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 5rem;
+  z-index: 1;
+  display: flex;
+
 }
 
 .main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    height: 1.5rem;
-    /* width: 20px; */
-    display: inline-block;
-}
-
-.main-nav {
-text-align: right;
-width: 1440px;
-height: 25px;
-top: 20px;
-left: 20px;
-}
-
-.main-nav__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-nav__item {
-    display: inline-block;
-    margin: 0 1rem;
-}
-
-.main-nav__item a {
-    /*text-decoration: none;*/
-    padding: 0.2rem 0;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-
+  text-decoration: none;
+  display: inline-block;
 }
 
 .main-header__brand img {
-width: 1.2rem;
-height: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 8px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.main-nav__item a {
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 0;
+  position: relative; /* Stellt sicher, dass das Pseudo-Element relativ zum Link positioniert wird */
+}
+
+.main-nav__item a::after {
+  content: ""; /* Fügt das Pseudo-Element hinzu */
+  position: absolute; /* Positioniert das Pseudo-Element absolut innerhalb des Links */
+  bottom: 0; /* Positioniert das Pseudo-Element am unteren Rand des Links */
+  left: 0; /* Positioniert das Pseudo-Element ganz links im Link */
+  width: 2.2rem; /* Stellt sicher, dass das Pseudo-Element die gesamte Breite des Links einnimmt */
+  height: 1px; /* Die Höhe des unterstrichenen Strichs */
+  background-color: white; /* Farbe des unterstrichenen Strichs */
+}
+v .main-nav__item a:hover,
+.main-nav__item a:active {
+  color: red;
 }

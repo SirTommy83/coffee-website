@@ -1,0 +1,21 @@
+.main-title {
+  color: white;
+  position: fixed;
+}
+
+.main-title__title {
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.main-title__info {
+  margin: 0;
+}
+
+.main-title__image {
+  width: 100%;
+}
+
+.main-title__image img {
+}
