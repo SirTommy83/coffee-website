@@ -1,29 +1,57 @@
 .main-title {
   position: relative;
-}
-
-.main-title__title,
-.main-title__info {
-  position: absolute; /* Positionierung relativ zum .main-title-Container */
-  top: 50%; /* Oben um 50% des Containerhöhe verschieben */
-  left: 50%; /* Links um 50% des Containerbreite verschieben */
-  transform: translate(-50%, -50%); /* Korrektur der Verschiebung, um den Text zu zentrieren */
   text-align: center; /* Zentriert den Text innerhalb des Containers */
-  color: white; /* Textfarbe anpassen, falls nötig */
-  z-index: 1; /* Stellt sicher, dass der Text über dem Bild liegt */
 }
 
-.main-title__image{
+.main-title__title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 75px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin: 0;
+}
+
+.main-title__info {
+  font-size: 1.1rem;
+  font-weight: 400;
+  position: absolute;
+  top: calc(45% + 2.5rem); /* Hier kannst du den Abstand zwischen h1 und p anpassen */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  margin: 0;
+}
+
+.main-title__image {
   width: 100%;
   height: 75vh;
   object-fit: cover; /* Zoomt das Bild, um es vollständig zu bedecken */
   object-position: center; /* Zentriert das Bild innerhalb des Containers */
 }
 
-.main-title__image img {
+.main-title__shop {
+  background: #1a1a1a;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 50px;
+  border: 2px;
+  border-radius: 5px;
 }
 
-.zum-shop {
-  background: #1A1A1A;
+.main-title__shop a {
+  text-decoration: none;
   color: white;
+  size: 0.9rem;
+}
+
+.main-title__shop a:hover,
+.main-title__shop a:active {
+ color: blue;
 }

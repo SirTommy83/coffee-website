@@ -1,6 +1,7 @@
 body {
   background: white;
-  font-family: roboto;
+  font-family: 'roboto', sans-sarif;
+  margin: 0;
 
   @media (min-width: 768px) {
     color: white;
@@ -27,4 +28,80 @@ img {
 
 h2 {
   font-size: var(--h2-font-size);
+}
+
+.main-text {
+  margin: 1.5rem;
+}
+
+.roesterei {
+}
+
+.roesterei__title {
+  font-size: var(--h2-font-size-m);
+}
+
+.roesterei__info {
+  font-size: var(--body-text-font-size-m);
+}
+
+.cafe__image {
+  width: 75%;
+  float: right;
+  margin: 2rem 0;
+}
+
+.bio-fair {
+  clear: both; /* Sicherstellt, dass das Element unter allen Floats in der vorherigen HTML-Struktur positioniert wird */
+  margin-top: 1.2rem; /* Fügt etwas Abstand zwischen dem vorherigen Element und diesem hinzu */
+}
+
+.bio-fair h3 {
+  font-size: var(--h3-font-size-m);
+  font-weight: var(--h3-font-weight-m);
+  margin: 1rem 0;
+}
+
+.bio-fair p {
+  font-size: var(--body-text-font-size-m);
+  font-weight: var(--body-text-font-weight-m);
+  line-height: 1.1rem;
+}
+
+.flowers__image {
+  width: 75%;
+  margin: 1.5rem 0;
+}
+
+.shop {
+  background: var(--color-anthrazit);
+  height: 910px;
+}
+
+.shop h2 {
+  color: white;
+  font-size: var(--h2-font-size-m);
+  font-weight: var(--h2-font-weight-m);
+  position: relative;
+  left: 1.3rem;
+  top: 4rem;
+}
+
+.shop__button {
+  background: var(--color-anthrazit);
+  padding: 15px 50px;
+  border: 3px solid white;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+
+}
+
+.shop__button a {
+  text-decoration: none;
+  color: white;
+  font-size: var(--body-text-font-size-m);
+  font-weight: var(--body-text-font-weight-m);
 }
